@@ -14,7 +14,7 @@ outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
 mail.To = '#####email@email.email######'
 mail.Subject = 'Relatório de vendas'
-mail.HTMLBody = f'''
+mail.HTMLBody = f"""
 <p>Prezados,</p>
 
 <p>Segue o relatório de vendas por loja.</p>
@@ -33,7 +33,7 @@ mail.HTMLBody = f'''
 <p>Att,</p>
 <p>Python.</p>
 
-''' 
+""" 
 
 mail.Send() 
 
